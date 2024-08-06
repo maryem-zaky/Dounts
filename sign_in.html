@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Dunkin'</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .container{
+            width: 100%;
+            padding: 5 20;
+            text-align: center;
+        }
+
+    /* header */
+       .top-nav {
+            background-color: #fffefe;
+          width: 100%;
+          padding: 10px 0;
+          display: inline-block;
+        }
+        .account {
+           text-align: right;
+          display: block;
+          margin-bottom: 5px;
+          margin-right: 25px;
+       }
+
+       .account button {
+           background-color: #ffffff;
+           border: 2px solid #070707;
+           padding: 5px 10px;
+           cursor: pointer;
+           color: black;
+           font-weight: bold;
+           border-radius: 30px;
+       }
+
+     .top-nav  .account .sign-in {
+           background-color: #d11592;
+           border: none;
+           color: #fff;
+           padding: 7px 14px;
+           border-radius: 30px;
+       }
+       .menu{
+        margin-top: 5px;
+        display: inline-block;
+        width: 100%;
+       }
+
+        .menu li img{
+         width: 130px;
+         padding: 0;
+         margin:0% 20%;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 70px;
+            margin-left: 40px;
+           
+        }
+
+        .menu ul li {
+            display: inline; 
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #333;
+          font-size: 130%;
+          font-weight: bold;
+        }
+        .menu ul li a:hover{
+            color: #d11592;
+            text-decoration: underline;
+        }
+
+        /* body content */
+        .sign{
+            background-image: url(Coffee_Donut_Desktop_new1439x272.png);
+            background-repeat: no-repeat;
+            height: 300px;
+            background-size: 100%;
+          
+        }
+        .sign h1{
+            font-weight:bolder;
+           padding-top: 6%;
+           /* padding-right: 7%; */
+           font-size: 350%;
+           text-shadow: 2px 5px 5px  #7e7a7a;
+        }
+
+        /* form */
+        .sign-in-form{
+            text-align: center;
+
+        }
+        .sign-in-form input[type="email"],
+        .sign-in-form input[type="password"] {
+          width: 50%;
+            padding: 17px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;  
+        }
+        form > a{
+            color: #f82476;
+            margin: 20px 0;
+        display: block;
+         }
+         form > p{
+            opacity: 0.8;
+           
+         }
+         .or{
+            text-align: center;
+            color: rgb(65, 64, 64);
+            font-weight: bold;
+            margin: 3% 0 5%;
+         }
+         .or > a{
+            color: rgb(20, 20, 20);
+            font-weight: bold;
+            font-size: 120%;
+         }
+         .or > a:hover{
+            color: #d11592;
+         }
+      .sign-in-form form .sign-in {
+            background-color: #f35390;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            text-align: center;
+            margin: 30px 0;
+            width: 40%;
+            height: 50px;
+            font-size: 20px;
+          font-weight: bold;
+         font-weight: 800;
+          
+        }
+        .container .apple-signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 30px ;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid rgb(100, 98, 98);
+            width: 38%;
+            margin-left: 30%;
+        }
+        .container .apple-signup img {
+            width: 20px;
+            margin:0 20px;
+        }
+
+        /* footer */
+        .sec1{
+            display: inline-block;    
+        } 
+
+        /* quick links */
+        .footer .sec1 .quick{
+            text-align: left;
+            margin:2% 4% 2% 0;
+         float: right;
+         width: 43%;
+        }
+        .footer .sec1 .quick li{
+            list-style: none;
+            display: inline-block; 
+           
+        }
+        .footer .sec1 .quick ul{
+            padding-inline-start: 0;
+        }
+        .footer .sec1 .quick li a{
+           color: #333;
+           margin:15px;
+        }
+        .footer .sec1 .quick li a:hover{
+            color: #d11592;
+        }
+       /* follow us */
+       .sec1 .follow{
+           
+            float:left;
+             margin: 2% 0 2% 13%; 
+        }
+        .follow ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        .follow img
+            {
+          width:30px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        /* footer section two our partner */
+        .sec2 h2{
+            opacity: .8;
+        }
+         .sec2 .partner a img{
+            margin:0 9% 2%;
+         }
+
+         /* footer section legal */
+        .footer .legal {
+            font-size: 12px;
+        }
+        .footer .legal a {
+            display: inline-block;
+            margin: 10px 20px;
+           color: #222222;
+        }
+        .legal a:hover{
+            color:  #d11592;
+
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- <header> -->
+                <div class="top-nav">
+                    <div class="account">
+                        <a href="sign_up.html"><button class="sign-up">Sign Up</button></a>
+                        <a href="sign_in.html"> <button class="sign-in">Sign In</button></a>
+                    </div>
+                    <hr>
+                    
+                   <div class="menu">
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="delvery.html">Delivery</a></li>
+                        <li><a href="Home.html"><img src="Dunkin-Donuts-Logo-Transparent-PNG.png" alt="Dunkin' Logo"></a> </li>
+                        <li><a href="#">DUNKIN' REWARDS</a></li>
+                        <li> <a href="#">DUNKIN' CARD</a></li>
+                        <li><a href="#">SHOP</a></li>
+                    </ul>
+                </div>
+                </div>
+             <!-- body content -->
+                <div class="sign">
+                   <h1>SIGN IN</h1> 
+                </div>
+
+                <!-- sign in form -->
+           <div class="sign-in-form">
+            <form>
+                <input type="email" placeholder="Email *" required>
+                <input type="password" placeholder="Password *" required>
+                <a href="#" >Forgot Your Password?</a>
+                <p>*Required</p>
+                <button type="submit" class="sign-in">Sign In</button>
+                <p class="or">__________________________     OR     __________________________</p>
+                
+                <div class="apple-signup">
+                    <img src="Apple_Logo.svg" alt="Apple Logo">
+                    <span>SIGN UP WITH APPLE</span>
+                </div>
+               
+                <p class="or">
+                    Need a Dunkin' Account? 
+                    <a href="sign_up.html" >Sign Up</a>
+                </p>
+            </form>
+        </div>
+        <hr>
+        <footer class="footer">
+            <!-- section 1 quick links and social media -->
+            <section class="sec1">
+                <div class="quick">
+                    <h3>QUICK LINKS</h3>
+                    <ul>
+                        <li><a href="#">Press Room</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Corporate</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Franchising</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Site Map</a></li>
+
+                    </ul>
+                </div>
+                <div class="follow">
+                    <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://twitter.com/"> <img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="facebook (1).png" alt="Facebook"></a></li>
+                    <li><a href="https://ticktock.com/">  <img src="world.png" alt="Pinterest"></a></li>
+                    <li><a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1"> <img src="instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=aes">  <img src="play.png" alt="YouTube"></a></li>
+                </ul>
+              </div>
+            </section>
+           
+            <!-- section 2 our partner -->
+            <section class="sec2">
+                <h2>________________________________    Our Partner    ________________________________</h2>
+                <div class="partner">
+                    <a href=""><img src="JetBlue_new.png" alt="JetBlue"></a>
+                    <a href=""> <img src="BR_Logo_New.png" alt="Baskin-Robbins"></a>
+                    <a href=""> <img src="Amex.png" alt="American Express"></a>
+                </div>
+            </section>
+            <hr>
+            <!-- section 3 legel -->
+             <section class="sec3">
+                <div class="legal">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Do Not Sell My Personal Info</a>
+                    <a href="#">Your Ad Choices</a>
+                    <a href="#">CA Transparency in Supply Chains Act</a>
+                    <a href="#">Web Accessibility</a>
+                </div>
+             </section>
+        </footer>
+
+
+
+                </div>
+     </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header nav ul li {
+            margin: 0 20px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        header nav ul li a.active {
+            color: #e91e63;
+        }
+        .menu-categories {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-categories a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .menu-categories a.active {
+            color: #e91e63;
+            border-bottom: 2px solid #e91e63;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        .menu-item {
+            text-align: center;
+            margin: 20px;
+            width: 150px;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+        .menu-item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">MENU</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+                <li><a href="#">DELIVERY</a></li>
+                <li><a href="#">DUNKIN'</a></li>
+                <li><a href="#">DUNKIN' REWARDS</a></li>
+                <li><a href="#">DUNKIN' CARD</a></li>
+                <li><a href="#">SHOP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-categories">
+        <a href="#" class="active">ESPRESSO & COFFEE</a>
+        <a href="#">TEAS & MORE</a>
+        <a href="#">FROZEN DRINKS</a>
+        <a href="#">SANDWICHES & MORE</a>
+        <a href="#">SNACKS & WRAPS</a>
+        <a href="#">BAGELS & MUFFINS</a>
+        <a href="#">DONUTS</a>
+        <a href="#">BREW AT HOME</a>
+    </div>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="./hot-coffee.png" alt="Coffee">
+            <p>Coffee</p>
+        </div>
+        <div class="menu-item">
+            <img src="./iced_coffee.png" alt="Iced Coffee">
+            <p>Iced Coffee</p>
+        </div>
+        <div class="menu-item">
+            <img src="./cold_brew.png" alt="Cold Brew">
+            <p>Cold Brew</p>
+        </div>
+        <div class="menu-item">
+            <img src="./hot-americano.png" alt="Americano">
+            <p>Americano</p>
+        </div>
+        <div class="menu-item">
+            <img src="./iced_americano.png" alt="Iced Americano">
+            <p>Iced Amer
